@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% load cms_tags %}
+
+{% block title %}Events - {{ block.super }}{% endblock title %}
+
+{% block page_title %}{% placeholder "events_title" default="Next Mat Events Hosted by Maggie" %}{% endblock page_title %}
+
+{% block content %}
+    {% placeholder "events_content" %}
+{% endblock content %}

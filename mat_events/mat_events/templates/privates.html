@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load cms_tags %}
+
+{% block title %}Home - {{ block.super }}{% endblock title %}
+
+{% block page_title %}{% placeholder "welcome_title" default="Welcome to Aftrglow222" %}{% endblock page_title %}
+
+{% block content %}
+    {% placeholder "content" %}
+{% endblock content %}
+
+{% block extra_css %}
+    <style>
+        /* Add any index-specific styles here */
+    </style>
+{% endblock extra_css %}
+
+{% block extra_js %}
+    <script>
+        // Add any index-specific JavaScript here
+    </script>
+{% endblock extra_js %}

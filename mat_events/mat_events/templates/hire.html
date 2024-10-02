@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% load cms_tags %}
+
+{% block title %}Hire Maggie - {{ block.super }}{% endblock title %}
+
+{% block page_title %}{% placeholder "hire_title" default="Hire Maggie For Your Special Event" %}{% endblock page_title %}
+
+{% block content %}
+    {% placeholder "hire_content" %}
+{% endblock content %}

@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% load cms_tags %}
+
+{% block title %}Private Sessions - {{ block.super }}{% endblock title %}
+
+{% block page_title %}{% placeholder "private_sessions_title" default="Private Sessions with Maggie" %}{% endblock page_title %}
+
+{% block content %}
+    {% placeholder "private_sessions_content" %}
+{% endblock content %}
